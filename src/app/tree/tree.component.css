@@ -1,15 +1,19 @@
 * {margin: 0; padding: 0;}
 
-.cen{
-  
+
+
+body{
+  margin:0 auto;
 }
 
 .tree ul {
     padding-top: 20px; position: relative;
-	
+    
 	transition: all 0.5s;
 }
-
+.tree{
+  margin:0 auto;
+}
 .tree li {
 	float: left; text-align: center;
 	list-style-type: none;
@@ -113,13 +117,17 @@
     visibility: visible;
     opacity: 1;
   }
+  .overlay .content{
+    width:250px;
+
+  }
   
   .popup {
     margin: 70px auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: 20%;
     position: relative;
     transition: all 5s ease-in-out;
   }
@@ -131,8 +139,8 @@
   }
   .popup .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
@@ -140,7 +148,7 @@
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color:red;
   }
   .popup .content {
     max-height: 30%;
@@ -168,18 +176,9 @@
     font-size: 18px;
   }
   
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
+p{
+  margin-bottom: .5em;
+}
   
   a {
     text-decoration: none;
@@ -187,6 +186,3 @@
     color: black;
   }
   
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
