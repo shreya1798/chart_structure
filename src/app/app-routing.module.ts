@@ -5,7 +5,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [
   {path: "", component: TreeComponent},
-  {path: "**", component: PageNotFoundComponent}
+  {path: "**", component: PageNotFoundComponent},
+  {path: '404error', component: PageNotFoundComponent}
 ];
 
 @NgModule({
