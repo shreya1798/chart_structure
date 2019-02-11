@@ -2,7 +2,13 @@
 
 <html>
   <head>
-
+    <script>
+      $(document).on('click', function(event) {
+        if (!$(event.target).closest('#popup1').length) {
+        // Hide the menus.
+        }
+      });  
+    </script>
   </head>
   <body>
       <div class="tree">
@@ -15,7 +21,8 @@
                 <p>Architect & Engineer</p></a>
             <ul>
               <li>
-                  <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                  <a class="button" href= "#popup1">
+                    <h3><b>John Doe</b></h3>
                     <p>Architect & Engineer</p></a>
                 <ul>
                   <li>
@@ -85,18 +92,6 @@
 
 
 
-<<<<<<< HEAD
-<div class="card">
-  <img src="../../assets/ned.jpg" alt="John" style="width:100%">
-  <h1>John Doe</h1>
-  <p class="title">CEO & Founder, Example</p>
-  <p>Harvard University</p>
-  
-  
-</div>
-    </div>
-	</div>
-</div>
-<script></script>
-=======
->>>>>>> aac706e457ce56d635df90437f28e36de3940467
+
+
+
