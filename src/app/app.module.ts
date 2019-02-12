@@ -8,9 +8,13 @@ import { TreeComponent } from './tree/tree.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { NavComponent } from './nav/nav.component';
+
+import {HttpClientModule } from '@angular/common/http';
+
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
 import { PopupComponent } from './popup/popup.component';
+
 
 
 @NgModule({
@@ -24,10 +28,11 @@ import { PopupComponent } from './popup/popup.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     CoreModule,
     SharedModule
   ],
-  providers: [],
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

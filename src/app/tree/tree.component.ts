@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import {IData } from '../../shared/interface';
 import { DataService } from '../../core/data.service';
+
 
 @Component({
   selector: 'app-tree',
@@ -13,7 +15,7 @@ export class TreeComponent implements OnInit {
   data:IData[] = [];
   ngOnInit() {
     this.dataservice.getData().subscribe((metadata:IData[])=> this.data = metadata);
-    
+  
   }
   
 

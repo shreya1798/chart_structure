@@ -80,16 +80,16 @@ body{
 	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
 
-.tree li a:hover+ul li::after, 
-.tree li a:hover+ul li::before, 
-.tree li a:hover+ul::before, 
-.tree li a:hover+ul ul::before{
+.tree li .effect:hover+ul li::after, 
+.tree li .effect:hover+ul li::before, 
+.tree li .effect:hover+ul::before, 
+.tree li .effect:hover+ul ul::before{
 	border-color:  #94a0b4;
 }
 
+img {
+	border-radius: 50%;
+	width:40px;
+	height:40px;
+  }
 
-
-
-  
-
- 
