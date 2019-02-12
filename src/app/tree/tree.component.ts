@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Iperson } from '../shared/person';
 import { HelloService } from '../shared/hello.service';
+
+import {IData } from '../../shared/interface';
+import { DataService } from '../../core/data.service';
+
 
 @Component({
   selector: 'app-tree',
@@ -10,14 +15,11 @@ import { HelloService } from '../shared/hello.service';
 })
 export class TreeComponent implements OnInit {
 
-  
-  persons: Iperson[] = [];
-
-  constructor(private helloService: HelloService) { }
-
+  constructor(private dataservice: DataService) { }
+  data:IData[] = [];
   ngOnInit() {
-    this.helloService.getDetails().subscribe((people: Iperson[]) => this.persons = people);
-    console.log(this.persons[3]);
+    this.dataservice.getData().subscribe((metadata:IData[])=> this.data = metadata);
+  
   }
   
 
