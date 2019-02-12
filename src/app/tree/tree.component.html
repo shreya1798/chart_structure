@@ -11,79 +11,117 @@
     </script>
   </head>
   <body>
+     
+
       <div class="tree">
+        
           <br />
           <br />
           <ul>
 
-          <li>
-              <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+          <li><div *ngFor = "let per of persons">
+            <div *ngIf = "per.Id===1">
+            <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                 <p>Architect & Engineer</p></a>
+              </div>
+              </div>
             <ul>
-              <li>
+              <li><div *ngFor = "let per of persons">
+                  <div *ngIf = "per.Id===2">
                   <a class="button" href= "#popup1">
-                    <h3><b>John Doe</b></h3>
+                    <h3><b>{{per.Name}}</b></h3>
                     <p>Architect & Engineer</p></a>
+                    </div>
+                    </div>
                 <ul>
-                  <li>
-                      <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                  <li><div *ngFor = "let per of persons">
+                      <div *ngIf = "per.Id===3">
+                      <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                         <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
                   </li>
                 </ul>
               </li>
-              <li>
-                  <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+              <li><div *ngFor = "let per of persons">
+                  <div *ngIf = "per.Id===4">
+                  <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                     <p>Architect & Engineer</p></a>
+                    </div>
+                    </div>
                 <ul>
-                  <li><a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                    <p>Architect & Engineer</p></a></li>
-                  <li>
-                      <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                  <li><div *ngFor = "let per of persons">
+                      <div *ngIf = "per.Id===5">
+                    <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
+                    <p>Architect & Engineer</p></a>
+                    </div>
+                  </div>
+                  <li><div *ngFor = "let per of persons">
+                      <div *ngIf = "per.Id===15">
+                      <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                         <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
                     <ul>
-                      <li>
-                          <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                      <li><div *ngFor = "let per of persons">
+                          <div *ngIf = "per.Id===11">
+                          <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                             <p>Architect & Engineer</p></a>
+                            </div>
+                            </div>
                       </li>
-                      <li>
-                          <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                      <li><div *ngFor = "let per of persons">
+                          <div *ngIf = "per.Id===12">
+                          <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                             <p>Architect & Engineer</p></a>
+                            </div>
+                            </div>
                       </li>
-                      <li>
-                          <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                      <li><div *ngFor = "let per of persons">
+                          <div *ngIf = "per.Id===13">
+                          <a class="button" href= "#popup1"><h3><b>{{per.Name}}</b></h3>
                             <p>Architect & Engineer</p></a>
+                            </div>
+                            </div>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                      <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
+                  <li><div *ngFor = "let per of persons">
+                      <div *ngIf = "per.Id===14">
+                      <a class="button" href= "#popup1/{{per.Id}}"><h3><b>{{per.Name}}</b></h3>
                         <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
                 </ul>
               </li>
             </ul>
           </li>
           
         </ul>
-        
+      
         </div>
         <!--POPUP code here-->
         <div id="popup1" class="overlay">
           <div class="popup " href="#">
-            
-            <a class="close" href="#">&times;</a>
+            <div *ngFor = "let l of persons">
+             <!-- <div *ngIf = "l.Id===ids">-->
+            <a class="cl>ose" href="#">&times;</a>
             <div class="content">
             <div class="card">
+
                 <img src="../../assets/ned.jpg" alt="John" style="width:100%;border-radius: 15px;">
-                <h1>John Doe</h1>
+                <h1>{{l.Name}}</h1>
                 <p class="title">CEO & Founder, Example</p>
-                <p><span>Email: </span> john.doe@gmail.com</p>
+                <p><span>Email: </span> {{l.Email}}</p>
                 <p><span>Contact: </span> 123456</p>
                 <br />
               </div>
             </div>
+            </div>
+            <!--</div>-->
+          
           </div>
         </div>
-
 
   </body>
 </html>

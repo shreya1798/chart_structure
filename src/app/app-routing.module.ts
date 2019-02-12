@@ -4,6 +4,7 @@ import { TreeComponent } from './tree/tree.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  {path: "tree", component: TreeComponent},
   {path: "", component: TreeComponent},
   {path: "**", component: PageNotFoundComponent},
   {path: '404error', component: PageNotFoundComponent}

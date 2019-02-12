@@ -8,6 +8,8 @@ import { TreeComponent } from './tree/tree.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { NavComponent } from './nav/nav.component';
+import { SharedModule } from './shared/shared.module';
+import {HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,13 +17,15 @@ import { NavComponent } from './nav/nav.component';
     AppComponent,
     TreeComponent,
     PageNotFoundComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    SharedModule
   ],
-  providers: [],
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
