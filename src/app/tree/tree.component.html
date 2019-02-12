@@ -9,47 +9,100 @@
           <br />
           <ul>
           <li>
-              <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                <p>Architect & Engineer</p></a>
+              <div *ngFor = "let d of data" >
+                  <div *ngIf = "d.Id == 1" routerLink="/popup3/{{d.Id}}">
+                       
+                    <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                      <p>Architect & Engineer</p></a>
+                    </div>
+                    </div>
             <ul>
               <li>
-                  <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                    <p>Architect & Engineer</p></a>
+                <div *ngFor = "let d of data" >
+                  <div *ngIf = "d.Id == 2" routerLink="/popup3/{{d.Id}}">
+                       
+                    <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                      <p>Architect & Engineer</p></a>
+                    </div>
+                    </div>
                 <ul>
                   <li>
-                      <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                        <p>Architect & Engineer</p></a>
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 3" routerLink="/popup3/{{d.Id}}">
+                           
+                        <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                          <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
                   </li>
                 </ul>
               </li>
               <li>
-                  <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                    <p>Architect & Engineer</p></a>
+                <div *ngFor = "let d of data" >
+                  <div *ngIf = "d.Id == 4" routerLink="/popup3/{{d.Id}}">
+                       
+                    <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                      <p>Architect & Engineer</p></a>
+                    </div>
+                    </div>
                 <ul>
-                  <li><a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                    <p>Architect & Engineer</p></a></li>
                   <li>
-                      <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                        <p>Architect & Engineer</p></a>
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 5" routerLink="/popup3/{{d.Id}}">
+                           
+                        <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                          <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
+                  <li>
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 11" routerLink="/popup3/{{d.Id}}">
+                           
+                        <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                          <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
                     <ul>
                       <li>
-                          <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                            <p>Architect & Engineer</p></a>
+                          
+                        <div *ngFor = "let d of data" >
+                          <div *ngIf = "d.Id == 12" routerLink="/popup3/{{d.Id}}">
+                               
+                            <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                              <p>Architect & Engineer</p></a>
+                            </div>
+                            </div>
                       </li>
                       <li>
-                          <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                            <p>Architect & Engineer</p></a>
+                        <div *ngFor = "let d of data" >
+                          <div *ngIf = "d.Id == 13" routerLink="/popup3/{{d.Id}}">
+                               
+                            <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                              <p>Architect & Engineer</p></a>
+                            </div>
+                            </div>
                       </li>
                       <li>
-                          <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                            <p>Architect & Engineer</p></a>
+                        <div *ngFor = "let d of data" >
+                          <div *ngIf = "d.Id == 14" routerLink="/popup3/{{d.Id}}">
+                               
+                            <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                              <p>Architect & Engineer</p></a>
+                            </div>
+                            </div>
                       </li>
                     </ul>
                   </li>
                   <li>
-                      <a class="button" href= "#popup1"><h3><b>John Doe</b></h3>
-                        <p>Architect & Engineer</p></a>
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 15" routerLink="/popup3/{{d.Id}}">
+                           
+                        <a class="button"><h3><b>{{ d.Name }}</b></h3>
+                          <p>Architect & Engineer</p></a>
+                        </div>
+                        </div>
                 </ul>
+              
               </li>
             </ul>
           </li>
@@ -57,24 +110,7 @@
         </ul>
         
         </div>
-        <!--POPUP code here-->
-        <div id="popup1" class="overlay">
-          <div class="popup " href="#">
-            
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-            <div class="card">
-                <img src="../../assets/ned.jpg" alt="John" style="width:100%;border-radius: 15px;">
-                <h1>John Doe</h1>
-                <p class="title">CEO & Founder, Example</p>
-                <p><span>Email: </span> john.doe@gmail.com</p>
-                <p><span>Contact: </span> 123456</p>
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
-
+        
 
   </body>
 </html>

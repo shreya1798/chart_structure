@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TreeComponent } from './tree/tree.component';
+import { PopupComponent } from './popup/popup.component';
 
 const routes: Routes = [
-  {path: "", component: TreeComponent}
+ 
+  { path: "popup3/:id", component:PopupComponent  },
 ];
 
 @NgModule({

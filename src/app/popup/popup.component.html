@@ -1,0 +1,24 @@
+
+<div class="overlay">
+	<div class="popup">
+		<a class="close" href="#home">&times;</a>
+		<div class="content">
+       <!-- <div *ngFor = "let d of data" >-->
+          
+            <div *ngIf = "data">
+               <div class="card">
+            <img src="../../assets/avatar.png" alt="Profile Pic" style="width:100%">
+            
+            <h1>{{ data.Name }}</h1>
+            <p class="title">
+              <span>Email: </span>
+              {{ data.Email }}
+            </p>
+            <p><span>Contact: </span> {{ data.Contact }}</p>
+            <br />
+         <!--</div>-->
+          </div>
+        </div>
+		</div>
+	</div>
+</div>
