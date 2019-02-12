@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { Iperson } from '../shared/person';
 import { HelloService } from '../shared/hello.service';
 
