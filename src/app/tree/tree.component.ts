@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Iperson } from '../shared/person';
-import { HelloService } from '../shared/hello.service';
 
 import {IData } from '../../shared/interface';
 import { DataService } from '../../core/data.service';
@@ -9,8 +7,7 @@ import { DataService } from '../../core/data.service';
 @Component({
   selector: 'app-tree',
   templateUrl: './tree.component.html',
-  styleUrls: ['./tree.component.css'],
-  providers: [HelloService]
+  styleUrls: ['./tree.component.css']
 })
 export class TreeComponent implements OnInit {
 
