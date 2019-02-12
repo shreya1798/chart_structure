@@ -6,7 +6,9 @@
 	border-style: none;
 	outline: none !important;
   }
-
+.effect{
+	outline:none !important;
+}
 .tree ul {
     padding-top: 20px; position: relative;
 	
@@ -110,4 +112,10 @@ right connector from last child*/
   .example-header-image {
 	background-image: url('../../assets/avatar.png');
 	background-size: cover;
-  }
+	}
+	
+	img{
+		border-radius: 50%;
+		width:40px;
+		height:40px;
+	}
