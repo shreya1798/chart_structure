@@ -13,8 +13,11 @@ import { IData } from '../shared/interface';
 export class DataService{
     private Url = 'http://098deb2b.ngrok.io/api/OrgEmployees'
     baseUrl = 'http://098deb2b.ngrok.io/api/OrgEmployees';
+
     constructor(private http:HttpClient, private route: ActivatedRoute){}
+
     public lol;
+
     getData():Observable<IData[]>{
         var lol = this.http.get<IData[]>(this.baseUrl);
         return lol;
@@ -24,6 +27,13 @@ export class DataService{
  getIDs(id: number): Observable<IData> {
     const url = `${this.Url}/${id}`;
     return this.http.get<IData>(url);
+  }
+
+  postFile(fileToUpload : File){
+    const endpoint = '../assets/images';
+    const formData : FormData = new FormData();
+    formData.append('Image', fileToUpload,fileToUpload.name);
+    return this.http.post(endpoint, formData);
   }
       
       
