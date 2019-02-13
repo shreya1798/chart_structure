@@ -11,10 +11,14 @@ import { DataService } from '../../core/data.service';
 })
 export class TreeComponent implements OnInit {
 
+  public loading = false;
+
   constructor(private dataservice: DataService) { }
   data:IData[] = [];
   ngOnInit() {
-    this.dataservice.getData().subscribe((metadata:IData[])=> this.data = metadata);
+    this.dataservice.getData().subscribe((metadata:IData[])=>{ this.data = metadata
+      this.loading=false;
+    });
   
   }
   
