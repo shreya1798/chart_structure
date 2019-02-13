@@ -11,8 +11,8 @@ import { IData } from '../shared/interface';
 })
 
 export class DataService{
-    private Url = 'http://098deb2b.ngrok.io/api/OrgEmployees'
-    baseUrl = 'http://098deb2b.ngrok.io/api/OrgEmployees';
+    private Url = 'http://f8299c19.ngrok.io/api/OrgEmployees'
+    baseUrl = 'http://f8299c19.ngrok.io/api/OrgEmployees';
     constructor(private http:HttpClient, private route: ActivatedRoute){}
     public lol;
     getData():Observable<IData[]>{

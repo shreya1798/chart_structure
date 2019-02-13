@@ -11,6 +11,8 @@ import { Observable, of } from 'rxjs';
 })
 export class PopupComponent implements OnInit {
   data: IData;
+  imageUrl:string ='../assets/avatar.png';
+  fileToUpload:File = null;
   constructor(private route: ActivatedRoute, private dataservice: DataService) { }
   ngOnInit(): void {
     this.getIDs();
@@ -20,6 +22,15 @@ export class PopupComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');
     this.dataservice.getIDs(id)
       .subscribe(data => this.data = data);
+  }
+  handleFileInput(file:FileList){
+    this.fileToUpload = file.item(0);
+    //show preview
+    var reader = new FileReader();
+    reader.onload = (event:any) => {
+      this.imageUrl = event.target.result;
+    }
+    reader.readAsDataURL(this.fileToUpload);
   }
 
 }
