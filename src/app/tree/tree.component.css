@@ -7,6 +7,10 @@ body{
   overflow:auto !important;
 }
 
+.effect{
+	outline: none !important;
+}
+
 .tree ul {
     padding-top: 20px; position: relative;
     

@@ -6,10 +6,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [ 
   { path: "popup3/:id", component:PopupComponent  },
-  {path: "", component: TreeComponent}, 
   {path: "tree", component: TreeComponent},
   {path: "404error", component: PageNotFoundComponent},
-  {path: "**", component: PageNotFoundComponent},
+  
+  //{path: "**", component: PageNotFoundComponent}
 ];
 
 @NgModule({

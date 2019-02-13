@@ -14,8 +14,10 @@ import {HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
 import { PopupComponent } from './popup/popup.component';
+import { UploadImageComponent } from './upload-image/upload-image.component';
 
-
+import { FormsModule } from '@angular/forms';
+import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,16 @@ import { PopupComponent } from './popup/popup.component';
     NavComponent,
     PopupComponent,
     PageNotFoundComponent,
+    UploadImageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    NgxLoadingModule.forRoot({})
   ],
   providers:[],
   bootstrap: [AppComponent]

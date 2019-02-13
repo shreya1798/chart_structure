@@ -1,15 +1,15 @@
 
 <div class="overlay">
 	<div class="popup">
-		<a class="close" href="#home">&times;</a>
+		<a class="close" routerLink="">&times;</a>
 		<div class="content">
        <!-- <div *ngFor = "let d of data" >-->
-          
+          <app-upload-image></app-upload-image>
             <div *ngIf = "data">
                <div class="card">
-            <img src="../../assets/avatar.png" alt="Profile Pic" style="width:100%">
+            <!--<img src="../../assets/avatar.png" alt="Profile Pic" style="width:100%">-->
             
-            <h1>{{ data.Name }}</h1>
+            <h3>{{ data.Name }}</h3>
             <p class="title">
               <span>Email: </span>
               {{ data.Email }}
@@ -22,3 +22,4 @@
 		</div>
 	</div>
 </div>
+
