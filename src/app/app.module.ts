@@ -7,12 +7,16 @@ import { TreeComponent } from './tree/tree.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { NavComponent } from './nav/nav.component';
+
+import {HttpClientModule } from '@angular/common/http';
+
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
 import { PopupComponent } from './popup/popup.component';
-import { FormsModule } from '@angular/forms';
+
 import { UploadImageComponent } from './upload-image/upload-image.component';
 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,13 @@ import { UploadImageComponent } from './upload-image/upload-image.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     CoreModule,
     SharedModule,
     FormsModule
+
   ],
-  providers: [],
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

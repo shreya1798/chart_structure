@@ -3,6 +3,7 @@ import { IData } from '../../shared/interface';
 import { DataService } from '../../core/data.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, of } from 'rxjs';
+import { Iimage } from 'src/shared/imginterface';
 
 @Component({
   selector: 'app-popup',
@@ -13,9 +14,11 @@ export class PopupComponent implements OnInit {
   data: IData;
   imageUrl:string ='../assets/avatar.png';
   fileToUpload:File = null;
+  image:Iimage[] = [];
   constructor(private route: ActivatedRoute, private dataservice: DataService) { }
   ngOnInit(): void {
     this.getIDs();
+    this.dataservice.getImage().subscribe((metaimage:Iimage[])=>{ this.image = metaimage});
   }
   
   getIDs(): void {

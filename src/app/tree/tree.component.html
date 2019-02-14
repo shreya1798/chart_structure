@@ -2,10 +2,19 @@
 
 <html>
   <head>
-
+    <script>
+      $(document).on('click', function(event) {
+        if (!$(event.target).closest('#popup1').length) {
+        // Hide the menus.
+        }
+      });  
+    </script>
   </head>
   <body>
+     
+
       <div class="tree">
+          <!--<ng-template #customLoadingTemplate>-->
           <br />
           <br />
           <ul>
@@ -13,32 +22,34 @@
           <li>
             
               <div *ngFor = "let d of data" >
-                  <div *ngIf = "d.Id == 1" class="effect" routerLink="/popup3/{{d.Id}}">
+                  <div *ngIf = "d.Id == 1" class = "effect" routerLink="/popup3/{{d.Id}}">
                     
                     <a class="button">
-                        <img src="../../assets/avatar.png"> 
-                      <h6><b>{{ d.Name }}</b></h6>
+                        <img src="../../assets/avatar.png" alt="Avatar"> 
+                      <h2><b>{{ d.Name }}</b></h2>
                       <p>Architect & Engineer</p></a>
                     </div>
-                    </div>
-                  
-                    <ul>
+                  </div>
+            <ul>
               <li>
-                <div *ngFor = "let d of data" class="effect" >
-                  <div *ngIf = "d.Id == 2" routerLink="/popup3/{{d.Id}}">
+                <div *ngFor = "let d of data" >
+                  <div *ngIf = "d.Id == 2" class="effect" routerLink="/popup3/{{d.Id}}">
                        
-                    <a class="button">
-                        <img src="../../assets/avatar.png"> <h6><b>{{ d.Name }}</b></h6>
+                    <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                      <h2><b>{{ d.Name }}</b></h2>
+
                       <p>Architect & Engineer</p></a>
                     </div>
                     </div>
                 <ul>
                   <li>
-                    <div *ngFor = "let d of data" class="effect" >
-                      <div *ngIf = "d.Id == 3" routerLink="/popup3/{{d.Id}}">
+
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 3" class="effect" routerLink="/popup3/{{d.Id}}">
                            
-                        <a class="button">
-                            <img src="../../assets/avatar.png"> <h6><b>{{ d.Name }}</b></h6>
+                        <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                          <h2><b>{{ d.Name }}</b></h2>
+
                           <p>Architect & Engineer</p></a>
                         </div>
                         </div>
@@ -46,76 +57,86 @@
                 </ul>
               </li>
               <li>
-                <div *ngFor = "let d of data" class="effect" >
-                  <div *ngIf = "d.Id == 4" routerLink="/popup3/{{d.Id}}">
+
+                <div *ngFor = "let d of data" >
+                  <div *ngIf = "d.Id == 4" class="effect" routerLink="/popup3/{{d.Id}}">
                        
-                    <a class="button">
-                        <img src="../../assets/avatar.png"> 
-                        <h6><b>{{ d.Name }}</b></h6>
+                    <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                      <h2><b>{{ d.Name }}</b></h2>
+
                       <p>Architect & Engineer</p></a>
                     </div>
                     </div>
                 <ul>
                   <li>
-                    <div *ngFor = "let d of data"  class="effect">
-                      <div *ngIf = "d.Id == 5" routerLink="/popup3/{{d.Id}}">
+
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 5" class="effect" routerLink="/popup3/{{d.Id}}">
                            
-                        <a class="button">
-                            <img src="../../assets/avatar.png"> <h6><b>{{ d.Name }}</b></h6>
+                        <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                          <h2><b>{{ d.Name }}</b></h2>
+
                           <p>Architect & Engineer</p></a>
                         </div>
                         </div>
                   <li>
-                    <div *ngFor = "let d of data" class="effect" >
-                      <div *ngIf = "d.Id == 11" routerLink="/popup3/{{d.Id}}">
+
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 11" class="effect" routerLink="/popup3/{{d.Id}}">
                            
-                        <a class="button">
-                            <img src="../../assets/avatar.png"> <h6><b>{{ d.Name }}</b></h6>
+                        <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                          <h2><b>{{ d.Name }}</b></h2>
+
                           <p>Architect & Engineer</p></a>
                         </div>
                         </div>
                     <ul>
                       <li>
-                          
-                        <div *ngFor = "let d of data" class="effect" >
-                          <div *ngIf = "d.Id == 12" routerLink="/popup3/{{d.Id}}">
+
+                        <div *ngFor = "let d of data" >
+                          <div *ngIf = "d.Id == 12" class="effect" routerLink="/popup3/{{d.Id}}">
                                
-                            <a class="button">
-                                <img src="../../assets/avatar.png"> <h6><b>{{ d.Name }}</b></h6>
+                            <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                              <h2><b>{{ d.Name }}</b></h2>
+
                               <p>Architect & Engineer</p></a>
                             </div>
                             </div>
                       </li>
                       <li>
-                        <div *ngFor = "let d of data"  class="effect">
-                          <div *ngIf = "d.Id == 13" routerLink="/popup3/{{d.Id}}">
+
+                        <div *ngFor = "let d of data" >
+                          <div *ngIf = "d.Id == 13" class="effect" routerLink="/popup3/{{d.Id}}">
                                
-                            <a class="button">
-                                <img src="../../assets/avatar.png"> <h6><b>{{ d.Name }}</b></h6>
+                            <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                              <h2><b>{{ d.Name }}</b></h2>
+
                               <p>Architect & Engineer</p></a>
                             </div>
                             </div>
                       </li>
                       <li>
-                        <div *ngFor = "let d of data"  class="effect">
-                          <div *ngIf = "d.Id == 14" routerLink="/popup3/{{d.Id}}">
+
+                        <div *ngFor = "let d of data" >
+                          <div *ngIf = "d.Id == 14" class="effect" routerLink="/popup3/{{d.Id}}">
                                
-                            <a class="button">
-                                <img src="../../assets/avatar.png"> 
-                                <h6><b>{{ d.Name }}</b></h6>
+                            <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                              <h2><b>{{ d.Name }}</b></h2>
+
                               <p>Architect & Engineer</p></a>
-                            </div>
+                              </div>
                             </div>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <div *ngFor = "let d of data" class="effect">
-                      <div *ngIf = "d.Id == 15" routerLink="/popup3/{{d.Id}}">
+
+                    <div *ngFor = "let d of data" >
+                      <div *ngIf = "d.Id == 15" class="effect" routerLink="/popup3/{{d.Id}}">
                            
-                        <a class="button">
-                            <img src="../../assets/avatar.png"> 
-                            <h6><b>{{ d.Name }}</b></h6>
+                        <a class="button"><img src="../../assets/avatar.png" alt="Avatar"> 
+                          <h2><b>{{ d.Name }}</b></h2>
+
                           <p>Architect & Engineer</p></a>
                         </div>
                         </div>
@@ -126,12 +147,12 @@
           </li>
           
         </ul>
-        
+        <!--</ng-template>-->
+        <!--<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>-->
         </div>
-        
-
   </body>
 </html>
+
 
 
 

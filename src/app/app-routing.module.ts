@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: "popup3/:id", component:PopupComponent  }, 
   {path:"upload" ,component:UploadImageComponent},
   {path: "404error", component: PageNotFoundComponent},
-  
 ];
 
 @NgModule({
