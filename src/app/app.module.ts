@@ -17,7 +17,6 @@ import { PopupComponent } from './popup/popup.component';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 
 import { FormsModule } from '@angular/forms';
-import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -34,8 +33,7 @@ import { NgxLoadingModule } from 'ngx-loading';
     HttpClientModule,
     CoreModule,
     SharedModule,
-    FormsModule,
-    NgxLoadingModule.forRoot({})
+    FormsModule
 
   ],
   providers:[],

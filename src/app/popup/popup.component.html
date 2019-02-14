@@ -1,29 +1,46 @@
-<div class="overlay">
+ <div class="overlay">
 	<div class="popup">
 		<a class="close" routerLink="">&times;</a>
 		<div class="content">
-       <!-- <div *ngFor = "let d of data" >-->
-          <app-upload-image></app-upload-image>
+      <!--<div *ngFor = "let d of data" >-->
+         <!-- <app-upload-image></app-upload-image>-->
             <div *ngIf = "data">
-               <div class="card">
-            <!--<img src="../../assets/avatar.png" alt="Profile Pic" style="width:100%">-->
-            
-            <h3>{{ data.Name }}</h3>
-
-            <p class="title">
-              <span>Email: </span>
-              {{ data.Email }}
-            </p>
-            <!--p><span>Contact: </span> {{ data.Contact }}</p-->
-              <a><i class="fa fa-dribbble"></i></a> 
-              <a><i class="fa fa-twitter"></i></a> 
-              <a><i class="fa fa-linkedin"></i></a> 
-              <a><i class="fa fa-facebook"></i></a> 
-            <p><button>Contact</button></p>
-         <!--</div>-->
+                <section>
+                    <div class="container">
+                      <div class="card-wrapper">
+                        <div class="card">
+                          <img src="../../assets/bg-image.jpg" alt="card background" class="card-img">
+                          <img src="../../assets/demo.jpg" alt="profile pic" class="profile-img">
+                          <h1>{{ data.Name }}</h1>
+                          <p class="job-title">Lead Developer</p>
+                             <p class="title">
+                              <span>Email: </span>
+                              {{ data.Email }}
+                            </p>
+                           <a href="#" class="btn">contact</a>
+                           <ul class="socail-media">
+                             <li><a href="https://facebook.com"><i class="fa fa-facebook-official fb" aria-hidden="true"></i></a></li>
+                             <li><a href="https:///twitter.com"><i class="fa fa-twitter-square tw" aria-hidden="true"></i></a></li>
+                             <li><a href="https://instagram.com"><i class="fa fa-instagram ins" aria-hidden="true"></i></a></li>
+                             <li><a href="https://plus.google.com"><i class="fa fa-google-plus-official gplus" aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+               
           </div>
         </div>
+
+
+
 		</div>
 	</div>
-</div>
 
+
+
+
+
+
+
+           

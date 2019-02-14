@@ -1,5 +1,5 @@
 export interface IData {
-    Id?: number;
+    Id: number;
     Name: string;
     Email: string;
     Contact: number;

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import { read } from 'fs';
 import { DataService } from '../../core/data.service';
+import { Iimage } from '../../shared/imginterface';
 
 
 @Component({
@@ -15,10 +14,13 @@ export class UploadImageComponent implements OnInit {
 
   imageUrl: string = '../assets/avatar.png';
   fileToUpload : File = null;
-
+  image:Iimage[] = [];
   constructor(private imageService: DataService ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+   
+    this.imageService.getImage().subscribe((metaimage:Iimage[])=>{ this.image = metaimage});
+    
   }
 
   handleFileInput(file: FileList){
