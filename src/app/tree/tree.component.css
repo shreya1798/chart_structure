@@ -1,14 +1,50 @@
 * {margin: 0; padding: 0;}
 
-.button{
+.button1{
 	text-decoration:none;
-	border:none;
-	border-style: none;
-	outline: none !important;
-  }
-.effect{
-	outline:none !important;
+	background-color:#c299ff;
+	width:180px;
+	height:65px;
+	position:relative;
+	border-radius: 10px;
 }
+.first{
+	background-color: #d279d2;
+}
+.second{
+	background-color:#3385ff;
+}
+.third{
+	background-color:#ff6699;
+}
+.forth{
+	background-color:#5cd65c;
+}
+img{
+	width:60px;
+	height:60px;
+	position: absolute;
+	left:10px;
+	border-radius: 10px;
+
+}
+	.button1 .imga h2{
+		text-align:center;
+		width:260px;
+		font-size: 15px;
+		position: absolute;
+		top:16px;
+		left:8px;
+		color:black;
+	}
+.button1 .pra{
+	position: absolute;
+	top:40px;
+	font-size: 14px;
+	left:90px;
+	color:white;;
+}
+
 
 
 .tree ul {
@@ -36,12 +72,12 @@
 .tree li::before, .tree li::after{
 	content: '';
 	position: absolute; top: 0; right: 50%;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid rgb(10, 10, 10);
 	width: 50%; height: 20px;
 }
 .tree li::after{
 	right: auto; left: 50%;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid rgb(10, 10, 10);
 }
 
 /*We need to remove left-right connectors from elements without 
@@ -60,7 +96,7 @@ right connector from last child*/
 }
 /*Adding back the vertical connector to the last nodes*/
 .tree li:last-child::before{
-	border-right: 1px solid #ccc;
+	border-right:1px solid rgb(10, 10, 10);
 	border-radius: 0 5px 0 0;
 	-webkit-border-radius: 0 5px 0 0;
 	-moz-border-radius: 0 5px 0 0;
@@ -75,7 +111,7 @@ right connector from last child*/
 .tree ul ul::before{
 	content: '';
 	position: absolute; top: 0; left: 50%;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid rgb(10, 10, 10);
 	width: 0; height: 20px;
 }
 
@@ -100,7 +136,9 @@ right connector from last child*/
 /*Time for some hover effects*/
 /*We will apply the hover effect the the lineage of the element also*/
 .tree li a:hover, .tree li a:hover+ul li a {
-	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+	transform:translateY(-2px);
+	box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+	color: #000; border: 1px solid #000000;
 }
 
 /*Connector styles on hover*/
@@ -108,7 +146,7 @@ right connector from last child*/
 .tree li a:hover+ul li::before, 
 .tree li a:hover+ul::before, 
 .tree li a:hover+ul ul::before{
-	border-color:  #94a0b4;
+	border-color:  #000000;
 }
 
   
@@ -117,7 +155,7 @@ right connector from last child*/
 	background-size: cover;
 	}
 	
-	img{
+	.img{
 		border-radius: 50%;
 		width:40px;
 		height:40px;
